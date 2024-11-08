@@ -8,7 +8,6 @@ return response.json();
     {
        console.log(jsonData);
             var productImg = jsonData.data.images.original.url;
-           
             var image = document.createElement("img");
             image.setAttribute('src', productImg)
             document.body.appendChild(image)
