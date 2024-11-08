@@ -12,6 +12,11 @@ return response.json();
             var image = document.createElement("img");
             image.setAttribute('src', productImg)
             document.body.appendChild(image)
+
+            var title =jsonData.data.title;
+            var caption = document.createElement("h3");
+            caption.innerHTML = title;
+            document.body.appendChild(caption)
     })
     
 
